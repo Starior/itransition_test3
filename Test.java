@@ -54,15 +54,10 @@ class Test {
             } else if ((variant - 1 < randomIndex && randomIndex - (variant - 1) < args.length / 2)
                 || (variant - 1 > randomIndex && (variant - 1) - randomIndex > (args.length / 2) + 1)) {
               System.out.println("Computer win");
-              System.out.println(randomIndex);
-              System.out.println(variant - 1);
             } else {
               System.out.println("You win!");
-              System.out.println(randomIndex);
-              System.out.println(variant - 1);
             }
             System.out.println("HMAC key: " + bytesToHex(secretKey));
-            System.out.println(args.length);
             System.exit(0);
           }
         } catch (Exception e) {
